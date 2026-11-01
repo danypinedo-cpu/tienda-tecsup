@@ -4,12 +4,7 @@ const productos = [
 ];
 
 function calcularTotal(lista) {
-  let total = 0;
-  for (const producto of lista) {
-    total = total + producto.precio*producto.cantidad;
-  }
-  return total;
+  return lista.reduce((acumulador, item) => acumulador + (item.precio * item.cantidad), 0);
 }
 
-document.getElementById("total").textContent =
-  "Total: S/ " + calcularTotal(productos).toFixed(2);
+document.getElementById("total").innerText = `Total: S/ ${calcularTotal(productos).toFixed(2)}`;
