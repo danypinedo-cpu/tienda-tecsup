@@ -1,12 +1,40 @@
 # Tienda TECSUP
 
-Proyecto de practica para el Laboratorio 03 del curso
-Diseno de Interfaces de Programacion Avanzado.
+![Licencia](https://img.shields.io/badge/licencia-MIT-green)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Estado](https://img.shields.io/badge/estado-en%20desarrollo-yellow) 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 
-Al abrir index.html en el navegador, la pagina deberia verse con los
-colores del curso y mostrar en la ultima linea:
+Tienda TECSUP es una aplicación web interactiva de catálogo y punto de venta institucional desarrollada para el curso de Diseño de Interfaces de Programación Avanzado. Permite listar artículos académicos en tiempo real, calcular automáticamente subtotales y totales en el cliente, y servir como base modular y didáctica para la integración de interfaces frontend reactivas.
 
-Total: S/ 68.00
+---
 
-Si lo que ves es distinto, hay algo que corregir. Reportalo con un
-Issue y propon la correccion con un Pull Request
+## Tabla de Contenidos
+
+- [Descripción](#descripción)
+- [Arquitectura](#arquitectura)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Catálogo de Productos](#catálogo-de-productos)
+- [Hoja de Ruta](#hoja-de-ruta)
+- [Contribución](#contribución)
+
+---
+
+## Descripción
+
+El proyecto implementa la lógica de interfaz de un carrito de compras escolar y universitario. A través de HTML5 semántico, reglas CSS3 institucionales y funciones nativas en JavaScript, realiza la sumatoria reactiva de productos adquiridos sin necesidad de librerías externas.
+
+---
+
+## Arquitectura
+
+El siguiente diagrama representa el flujo principal de carga y procesamiento de la aplicación:
+
+```mermaid
+flowchart TD
+    A["Carga de index.html"] --> B["Vinculación de estilos.css y script.js"]
+    B --> C["Lectura de productos en memoria"]
+    C --> D["Ejecución de calcularTotal"]
+    D --> E["Actualización del nodo DOM (#total)"]
+    E --> F["Renderizado en pantalla: Total S/ 68.00"]
