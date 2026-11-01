@@ -45,3 +45,4 @@ Descripción de lo que ocurre realmente (ej. cálculo desfasado, hoja de estilo 
 ### Entorno
 - Sistema Operativo: (ej. Windows 11, Ubuntu 24.04, macOS)
 - Navegador: (ej. Chrome v128, Firefox v130)
+

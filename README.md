@@ -38,3 +38,14 @@ flowchart TD
     C --> D["Ejecución de calcularTotal"]
     D --> E["Actualización del nodo DOM (#total)"]
     E --> F["Renderizado en pantalla: Total S/ 68.00"]
+```
+    ---
+
+## Instalación
+
+Para clonar y poner en marcha el proyecto localmente, ejecuta en tu terminal:
+
+```bash
+git clone https://github.com/danypinedo-cpu/tienda-tecsup.git
+cd tienda-tecsup
+python3 -m http.server 8000
