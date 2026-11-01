@@ -49,3 +49,24 @@ Para clonar y poner en marcha el proyecto localmente, ejecuta en tu terminal:
 git clone https://github.com/danypinedo-cpu/tienda-tecsup.git
 cd tienda-tecsup
 python3 -m http.server 8000
+
+```
+---
+
+## Uso
+
+Para añadir nuevos elementos o alterar la lista de compras, modifica la estructura de datos en `script.js`:
+
+```javascript
+// Definición de artículos en script.js
+const productos = [
+  { nombre: "Polo TECSUP", precio: 25.00, cantidad: 2 },
+  { nombre: "Taza TECSUP", precio: 18.00, cantidad: 1 }
+];
+
+// Cálculo del monto total acumulado
+function calcularTotal(lista) {
+  return lista.reduce((acumulador, item) => acumulador + (item.precio * item.cantidad), 0);
+}
+
+document.getElementById("total").innerText = `Total: S/ ${calcularTotal(productos).toFixed(2)}`;
