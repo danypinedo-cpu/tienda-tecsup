@@ -66,3 +66,29 @@ function calcularTotal(lista) {
   return lista.reduce((acumulador, item) => acumulador + (item.precio * item.cantidad), 0);
 }
 document.getElementById("total").innerText = `Total: S/ ${calcularTotal(productos).toFixed(2)}`;
+
+---
+```
+## Catálogo de Productos
+
+| Artículo | Categoría | Precio Unitario | Cantidad | Subtotal |
+| :--- | :---: | ---: | :---: | ---: |
+| Polo TECSUP | Indumentaria | S/ 25.00 | 2 | S/ 50.00 |
+| Taza TECSUP | Accesorios | S/ 18.00 | 1 | S/ 18.00 |
+| **Total** | **General** | **—** | **3** | **S/ 68.00** |
+
+---
+
+## Hoja de Ruta
+
+- [x] Estructuración semántica de tabla de artículos (`index.html`).
+- [x] Integración de estilos institucionales (`estilos.css`).
+- [x] Cálculo dinámico de totales (`script.js`).
+- [ ] Formulario para agregar productos desde la página.
+- [ ] Persistencia de compras mediante `localStorage`.
+
+---
+
+## Contribución
+
+Lee la [guia de contribucion](CONTRIBUTING.md) antes de enviar cambios.
